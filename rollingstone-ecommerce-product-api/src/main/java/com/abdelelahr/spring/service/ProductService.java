@@ -14,6 +14,6 @@ public interface ProductService {
 	Product save(Product product);
   Optional<Product> get(long id);
    Page<Product> getProductsByPage(Integer pageNumber, Integer pageSize );
-   void update(Product product);
+   void update(long id,Product product);
    void delete(long id);
 }
